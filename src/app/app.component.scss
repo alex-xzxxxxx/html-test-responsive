@@ -4,7 +4,6 @@
   background-size: cover;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   @media (max-width: 1441px) {
     width: 120%;
   }
@@ -13,6 +12,7 @@
   }
   @media (max-width: 376px) {
     background: none;
+    width: 100%;
   }
 }
 

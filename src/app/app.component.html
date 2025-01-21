@@ -1,0 +1,73 @@
+<div class="background-container">
+  <div class="container">
+    <div class="col-3 form-container">
+      <img src="assets/iCW-logo.png" alt="icw logo" />
+      <hr />
+      <h3 class="mb-5 form-title">USER LOGIN</h3>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="loginForm">
+        <div class="form-group mb-3">
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            formControlName="email"
+            placeholder="Business Email ID"
+          />
+        </div>
+        <div class="form-group mb-4">
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            formControlName="password"
+            placeholder="Password"
+          />
+          <img class="password-image" src="assets/eye-final.png" />
+        </div>
+        <div class="form-check mb-5">
+          <input
+            type="checkbox"
+            id="rememberMe"
+            class="form-check-input"
+            formControlName="rememberMe"
+          />
+          <label class="form-check-label ms-2" for="rememberMe"
+            >Remember Me</label
+          >
+        </div>
+        <div class="text-center">
+          <div class="mb-5 text-link">Don't remember your password?</div>
+          <button type="submit" class="btn mt-3 mb-5">Login</button>
+        </div>
+      </form>
+      <div class="bottom-bar text-center">
+        <img class="lock-image" src="assets/lock.png" />
+        Your security is our priority
+      </div>
+    </div>
+    <div class="content col-4">
+      <h1 class="content-title">
+        The smartest way for your patients to pay for their smiles.
+      </h1>
+      <p class="content-info">
+        Introducing a remarkable set of new features that simplify and
+        accelerate everyday tasks performed in the Portal. Providers have even
+        greater visibility and control over flexible financing offered through
+        the iCreditWorks native mobile App!
+      </p>
+    </div>
+    <div class="images-section col-5">
+      <img
+        class="logo-circle"
+        src="assets/logo-circle.png"
+        alt="Computer displaying portal interface"
+      />
+      <img
+        class="desktop-phone"
+        src="assets/desktop-phone.png"
+        alt="Computer displaying portal interface"
+      />
+    </div>
+  </div>
+</div>
+<div class="profile-icon responsive-image"></div>

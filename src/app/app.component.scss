@@ -1,0 +1,330 @@
+/* Default styles for larger screens */
+.background-container {
+  background-image: url("../assets/bg-info.png");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 1441px) {
+    width: 120%;
+  }
+  @media (max-width: 1281px) {
+    width: 120%;
+  }
+  @media (max-width: 376px) {
+    background: none;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 5%;
+  @media (max-width: 376px) {
+    background: none;
+  }
+}
+
+.password-image{
+  float: right;
+  margin-top: -40px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 2;
+}
+.form-container {
+  width: 484.5px;
+  height: 720px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  hr {
+    width: 100%;
+    margin: 1rem 0;
+    border: 2px solid #ea731f;
+    opacity: 1;
+  }
+
+  .btn {
+    width: 199.5px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #ea731f;
+    border-radius: 3px;
+    font-family: Neue Haas Grotesk Display;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.75px;
+    text-align: center;
+  }
+  .text-link {
+    font-family: Neue Haas Grotesk Display;
+    font-size: 21px;
+    font-weight: 450;
+    line-height: 24.02px;
+    text-align: center;
+    color: #486082;
+  }
+}
+
+.loginForm {
+  width: 418.5px;
+}
+.form-control {
+  width: 418.5px;
+  height: 67.5px;
+}
+.form-check-input {
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
+  &:checked {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    --bs-form-check-bg-image: url("../assets/path.png");
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+.form-check-label {
+  font-family: Neue Haas Grotesk Display;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 20.59px;
+  text-align: left;
+}
+.images-section {
+  margin-top: -15%;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  .logo-circle {
+    width: 90%;
+  }
+  .desktop-phone {
+    width: 118%;
+  }
+}
+.bottom-bar {
+  background-color: #5e6b75;
+  width: 484.5px;
+  height: 48px;
+  border-radius: 0px 0px 6px 6px;
+  color: #ffffff;
+  font-family: Neue Haas Grotesk Display;
+  font-size: 19.5px;
+  font-weight: 450;
+  line-height: 27px;
+  padding-top: 9px;
+}
+
+.profile-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 45px;
+  width: 87px;
+  height: 87px;
+  background-image: url("../assets/chat.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  .content-title {
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .content-info {
+    font-family: Neue Haas Grotesk Display;
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 25px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+
+/* Styles for 1440px screen */
+@media (max-width: 1441px) {
+  .container {
+    justify-content: flex-start;
+    padding: 0;
+    .form-container {
+      width: 348.23px;
+      height: 660px;
+      .text-link {
+        font-family: Neue Haas Grotesk Display;
+        font-size: 15px;
+        font-weight: 450;
+        line-height: 17.16px;
+        text-align: center;
+      }
+    }
+  }
+  .form-control {
+    width: 348.23px;
+    height: 48.52px;
+  }
+  .loginForm {
+    width: 348.23px;
+  }
+
+  .btn {
+    font-family: Neue Haas Grotesk Display;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21.56px;
+    text-align: center;
+  }
+  .bottom-bar {
+    background-color: #5e6b75;
+    color: #ffffff;
+    padding-top: 9px;
+    width: 348.23px;
+    height: 34.5px;
+    border-radius: 0px 0px 4.31px 4.31px;
+    font-family: Neue Haas Grotesk Display;
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 19.41px;
+    text-align: center;
+    .lock-image {
+      width: 15px;
+      height: 17px;
+      padding-bottom: 2px;
+    }
+  }
+}
+
+/* Styles for 1280px screen */
+@media (max-width: 1281px) {
+  .container {
+    justify-content: flex-start;
+    padding: 0;
+    .form-container {
+      width: 309.54px;
+      height: 660px;
+      .form-title {
+        font-family: Neue Haas Grotesk Display;
+        font-size: 15.33px;
+        font-weight: 500;
+        line-height: 23.96px;
+        margin-bottom: 2%;
+      }
+      .text-link {
+        font-family: Neue Haas Grotesk Display;
+        font-size: 13.42px;
+        font-weight: 450;
+        line-height: 15.35px;
+        text-align: center;
+      }
+    }
+    .form-control {
+      width: 267.37px;
+      height: 43.12px;
+    }
+    .loginForm {
+      width: 267.37px;
+    }
+
+    .btn {
+      font-family: Neue Haas Grotesk Display;
+      font-size: 15.33px;
+      font-weight: 500;
+      line-height: 19.17px;
+      text-align: center;
+    }
+    .bottom-bar {
+      background-color: #5e6b75;
+      color: #ffffff;
+      padding-top: 9px;
+      width: 309.54px;
+      height: 30.67px;
+      top: 429.33px;
+      border-radius: 0px 0px 3.83px 3.83px;
+      font-family: Neue Haas Grotesk Display;
+      font-size: 12.46px;
+      font-weight: 450;
+      line-height: 17.25px;
+      .lock-image {
+        width: 13px;
+        height: 15px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+}
+
+/* Styles for mobile screens (375px) */
+@media (max-width: 376px) {
+  .form-group label,
+  .form-group input,
+  .form-check,
+  .btn-block {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .container {
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    .form-container{
+        width: 375px;
+        background-color: #ffffff;
+    }
+    .content {
+      display: none;
+    }
+    .form-control {
+      width: 323px;
+      height: 54px;
+    }
+    .loginForm {
+      width: 323px;
+    }
+    .password-image{
+      margin-top: -50px;
+    }
+    .text-link {
+      font-family: Neue Haas Grotesk Display;
+      font-size: 18.2px;
+      font-weight: 450;
+      line-height: 20.82px;
+      text-align: center;
+    }
+    .btn {
+      font-family: Neue Haas Grotesk Display;
+      font-size: 17.6px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: center;
+    }
+    .bottom-bar {
+        background-color: #5e6b75;
+        color: #ffffff;
+        padding-top: 9px;
+        width: 375.23px;
+        height: 36px;
+    }
+  }
+
+  .images-section {
+    display: none;
+  }
+  .profile-icon {
+    display: none;
+  }
+}
